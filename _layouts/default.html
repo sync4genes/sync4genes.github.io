@@ -5,9 +5,9 @@
 	<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
 	{% include meta.html %}
-	<link rel="stylesheet" href="{{ site.baseurl }}/dist/semantic.min.css">
-	<link rel="stylesheet" href="{{ site.baseurl }}/style.css" />
-	<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+	<link rel="stylesheet" href="{{ site.url }}/dist/semantic.min.css">
+	<link rel="stylesheet" href="{{ site.url }}/style.css" />
+	<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.url }}/feed.xml" />
 </head>
 <body>
 	{% include header.html%}
