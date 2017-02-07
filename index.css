@@ -1,3 +1,6 @@
+---
+---
+
 html,
 body {
     width: 100%;
@@ -62,10 +65,10 @@ body{
     height: 600px;
     display: flex;
     flex-flow: row;
-    padding: 30px;
+    padding: 50px;
     justify-content: flex-end;
     align-items: center;
-    background-image: url('images/s4g.jpg');
+    background-image: url('{{ site.github.url }}/images/s4g.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -76,9 +79,14 @@ body{
     text-shadow: 1px 1px 10px #000000;
 }
 
-#main div.content{
+#main div.content, #main div.content-left{
     flex: 1;
-    text-align: center;
     width: 70%;
-    margin: 0 auto;
+    margin: 100px auto;
 }
+
+#main div.content{
+    text-align: center;
+}
+
+
