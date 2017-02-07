@@ -1,0 +1,10 @@
+<div class="header-bar">
+    <div class="head-title">
+        <span class="head-title-text">{{ site.name }}</span>
+    </div>
+    <div class="head-tools">
+    {% for link in site.data.headerlinks.links %}
+        <a href="{{link.url}}" class="ui inverted basic button">{{link.name}}</a>
+    {% endfor %}
+    </div>
+</div>
