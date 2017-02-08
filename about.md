@@ -1,4 +1,6 @@
 ---
+css: about
+title: Sync4Genes|About
 layout: about
 ---
 

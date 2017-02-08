@@ -74,7 +74,7 @@ body{
 }
 
 #main div.big-title .big-title-text{
-    font-size: 3em !important;
+    font-size: 4.5em !important;
     font-weight: bolder;
     text-shadow: 1px 1px 10px #000000;
 }
@@ -89,4 +89,8 @@ body{
     text-align: center;
 }
 
+
+.mid-img{
+    margin: 0 auto;
+}
 
