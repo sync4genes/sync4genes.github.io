@@ -51,7 +51,7 @@ baseurl: ""
 
 
 github:
-  url: "https://sync4genes.github.io/"
+  url: ""
 #
 # !! You don't need to change any of the configuration flags below !!
 #
@@ -87,4 +87,3 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
-theme: jekyll-theme-cayman
