@@ -6,7 +6,7 @@ function showRecaptcha(element) {
 }
 
 function setupRecaptcha() {
-  var contactFormHost = 'YOUR_BACKEND_ADDRESS_FROM_HEROKU',
+  var contactFormHost = 'http://s4g.herokuapp.com/',
       form = $('.contact'),
       notice = form.find('#notice');
 
@@ -30,16 +30,15 @@ function setupRecaptcha() {
               break;
 
             case 'failure_captcha':
-              showRecaptcha('recaptcha_widget');
-              notice.text(notice.data('captcha-failed')).fadeIn();
+              console.log('failure_captcha');
               break;
 
             case 'failure_email':
-              notice.text(notice.data('error')).fadeIn();
+              console.log('failure_email');
           }
         },
         error: function(xhr, ajaxOptions, thrownError) {
-          notice.text(notice.data('error')).fadeIn();
+          console.log('error');
         }
       });
     });

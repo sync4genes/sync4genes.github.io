@@ -5,22 +5,22 @@ before do
 end
 
 set :protection, false
-set :public_dir, Proc.new { File.join(root, "_site") }
+set :public_dir, Proc.new { File.join(root, "") }
 
 post '/send_email' do
   if recaptcha_valid?
     res = Pony.mail(
       :from => params[:name] + "<" + params[:email] + ">",
-      :to => 'YOUR_EMAIL_ADDRESS',
-      :subject => "[YOUR FILTER] " + params[:subject],
+      :to => 'info@sync4genes.org',
+      :subject => "null of filter" + params[:subject],
       :body => params[:message],
       :via => :smtp,
       :via_options => {
         :address              => 'smtp.sendgrid.net',
         :port                 => '587',
         :enable_starttls_auto => true,
-        :user_name            => ENV['SENDGRID_USERNAME'],
-        :password             => ENV['SENDGRID_PASSWORD'],
+        :user_name            => ENV['s4g_mail'],
+        :password             => ENV['sync4gnens'],
         :authentication       => :plain,
         :domain               => 'heroku.com'
       })
@@ -36,11 +36,11 @@ post '/send_email' do
 end
 
 not_found do
-  File.read('_site/404.html')
+  File.read('404.html')
 end
 
 get '/*' do
-  file_name = "_site#{request.path_info}/index.html".gsub(%r{\/+},'/')
+  file_name = "#{request.path_info}/_layouts/home.html".gsub(%r{\/+},'/')
   if File.exists?(file_name)
     File.read(file_name)
   else
