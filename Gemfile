@@ -1,2 +1,8 @@
-source "http://rubygems.org"
-gem "rack-jekyll"
+source "https://rubygems.org"
+# source 'http://ruby.taobao.org'
+
+gem 'rack'
+gem 'rack-recaptcha'
+gem 'sinatra'
+gem 'pony'
+gem 'json'
