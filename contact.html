@@ -2,35 +2,36 @@
 title: Sync4Genes|Contact
 layout: default
 css: contact
-js: contact
 ---
 <div class="contact ui form">
 	<h1 class="ui dividing huge header">Contact Sync4Genes Team</h1>
+	<form method="POST" action="http://formspree.io/info@sync4genes.org">
 	<div class="field">
 		<label>Name</label>
 		<div class="two fields">
 			<div class="field">
-				<input type="text" placeholder="First Name">
+				<input name="First Name" type="text" id="fn" placeholder="First Name">
 			</div>
 			<div class="field">
-				<input type="text" placeholder="Last Name">
+				<input name="Last Name" type="text" id="ln" placeholder="Last Name">
 			</div>
 		</div>
 	</div>
 	<div class="field">
 		<label>Email</label>
-		<input type="text" placeholder="Email">
+		<input name="Email" type="email" id="email" placeholder="Email">
 	</div>
 	<div class="field">
 		<label>Comment</label>
-		<textarea rows="10"></textarea>
+		<textarea name="message" rows="10" id="comment"></textarea>
 	</div>
-	<div class="submit">
+	<button type="submit" id="submit" class="ui positive button">Submit</button>
+	<!-- <div class="submit">
 		<div class="g-recaptcha" data-sitekey="6LecUBUUAAAAAHQIWeMjN6W8cyOsSEmdqc-l_Tg0"></div>
 		<div class="button">
-			<button class="ui positive button">Submit</button>
+			<button type="submit" id="submit" class="ui positive button">Submit</button>
 		</div>
-	</div>
-	<div id="recaptcha_div"></div>
+	</div> -->
+	</form>
 </div>
 
