@@ -40,7 +40,7 @@ post '/send_email' do
 end
 
 not_found do
-  File.read('_layouts/404.html')
+  File.read('_layouts/home.html')
 end
 
 get '/*' do
