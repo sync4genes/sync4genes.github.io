@@ -40,11 +40,11 @@ post '/send_email' do
 end
 
 not_found do
-  File.read('_layouts/home.html')
+  File.read('_layouts/404.html')
 end
 
 get '/*' do
-  file_name = "_layouts#{request.path_info}/index.html".gsub(%r{\/+},'/')
+  file_name = "_layouts#{request.path_info}/home.html".gsub(%r{\/+},'/')
   if File.exists?(file_name)
     File.read(file_name)
   else
