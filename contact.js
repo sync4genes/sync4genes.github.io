@@ -7,12 +7,13 @@ var data_js = {
 
 function js_onSuccess() {
     // remove this to avoid redirect
+    alert("Email sent successfully");
     console.log("Email sent successfully");
     window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
 }
 
 function js_onError(error) {
-	alert("sorry, we could not recieve more command today");
+	alert("Sorry, we could not recieve more mails today\nThanks for your support");
     console.log("Email could not be sent Error = 1");
     // remove this to avoid redirect
     // window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
