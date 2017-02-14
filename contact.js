@@ -12,6 +12,7 @@ function js_onSuccess() {
 }
 
 function js_onError(error) {
+	alert("sorry, we could not recieve more command today");
     console.log("Email could not be sent Error = 1");
     // remove this to avoid redirect
     // window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
