@@ -3,19 +3,21 @@ var form_id_js = "email_form";
 
 var data_js = {
     "access_token": "lfe68mfd8ztd59aqfyg7j836"
+    // "access_token": "xx0uy7orcn7e9wx5k8creego"
+    
 };
 
 function js_onSuccess() {
     // remove this to avoid redirect
-    alert("Email sent successfully");
+    // alert("Email sent successfully");
+    zeroModal.success('Email sent successfully!');
     console.log("Email sent successfully");
-    window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+    // window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
 }
 
 function js_onError(error) {
-	alert("Sorry, we could not recieve more mails today\nThanks for your support");
+    zeroModal.error('Sorry, Email sent failed');
     console.log("Email could not be sent Error = 1");
-    // remove this to avoid redirect
     // window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
 }
 
