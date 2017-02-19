@@ -11,12 +11,16 @@
 	<link rel="stylesheet" href="{{ site.github.url }}/dist/semantic.min.css">
 	<link rel="stylesheet" href="{{ site.github.url }}/index.css" />
 	<link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.url }}/feed.xml" />
-	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<link rel="stylesheet" type="text/css" href="../import/zeroModal.css">
 </head>
 <body>
 	{% include header.html%}
 	<div id="main">
 		{{content}}
 	</div>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src='../import/jquery.min.js'></script>
+	<script src='../contact.js'></script>
+	<script src='../import/zeroModal.min.js'></script>
 </body>
 </html>
