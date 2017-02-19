@@ -9,4 +9,4 @@ layout: home
 
 ### For more information on Sync for Genes and how to join,
 
-### please email us at  [info@sync4genes.org](info@sync4genes.org)
+### please email us at  [info@sync4genes.org](mailto:info@sync4genes.org)

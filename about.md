@@ -20,7 +20,7 @@ HL7® FHIR® builds on modern web-based technologies to enable health care apps 
 
 References:
 
-1. Alterovitz, Ullman-Cullere, et. al. “Domain Analysis Model: Clinical Sequencing,” HL7, 2017 [(in press, email for details)](gilusa@gmail.com).
+1. Alterovitz, Ullman-Cullere, et. al. “Domain Analysis Model: Clinical Sequencing,” HL7, 2017 [(in press, email for details)](mailto:gilusa@gmail.com).
 
 2. [Alterovitz, Warner, et. al.  “SMART on FHIR Genomics: facilitating standardized clinico-genomic apps”, JAMIA, 2016.](https://www.ncbi.nlm.nih.gov/pubmed/26198304)
 
