@@ -7,7 +7,7 @@ layout: about
 ## About
 
 
-It is critical that genomic data, including data from next generation sequencing (NGS) laboratories, be shared in a consistent and usable way. **Sync for Genes** established to expedite the use of standards to enable and improve patient’s ability to seamlessly share their genomics information.
+It is critical that genomic data, including data from next generation sequencing (NGS) laboratories, be shared in a consistent and usable way. **Sync for Genes** was established to expedite the use of standards to enable and improve patient’s ability to seamlessly share their genomics information.
  
 HL7® FHIR® builds on modern web-based technologies to enable health care apps at the point of care.  FHIR Genomics, the portion of FHIR related to clinical genomics, was designed to meet current clinical genomics use cases being utilized at health care organizations today, with special focus on clinical sequencing (1).  FHIR Genomics enables integration of clinical genomic information for better patient care via point of care apps, patient facing apps, as well as clinical research/analysis (2,3).
  
