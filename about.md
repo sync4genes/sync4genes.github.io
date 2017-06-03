@@ -17,7 +17,7 @@ HL7® FHIR® builds on modern web-based technologies to enable health care apps 
 
 ​**Sync for Genes** has combined participation from Labs, Providers, Government, Vendors, Patients, and Coordinators in order to provide learning in actual settings.  The information from this project will be used to facilitate standards and processes used to share clinical genomic information in order to help improve patient care.
 
-For guidance site based on Sync for Genes, please click [here](http://guidance.site)
+**For guidance site based on Sync for Genes, please click [here](http://guidance.site)**
 
 References:
 
